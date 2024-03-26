@@ -46,7 +46,6 @@
   background-color: #C6E3FA;
   /*border: red 1px solid;*/
   border-radius:.7em;
-  margin-bottom: 7px;
 }
 input {
   height: 100%;
@@ -107,10 +106,8 @@ input {
 }
 
 .btn-wrapper {
-  position:absolute;
-  top: 670px;
   width: 100%;
-  height: 80px;
+  height: 9vh;
 }
 
 .summary-wrapper {
@@ -143,13 +140,22 @@ input {
   margin-right: 1%;
 }
 
-
-.GuideList{
+.GGuideList{
   position: fixed;
   display: flex;
+  flex-direction: column;
+  height: 100vh;
   right: 0px;
   width: 30%;
-  height: 670px;
+  background-color: #F9F7C9;
+  border-radius: 25px;  
+}
+.GuideList{
+  
+  display: flex;
+  right: 0px;
+  width: 100%;
+  height: 91vh;
   /*background-color: #F9F7C9;*/
   border-radius: 25px;  
 }
@@ -169,7 +175,7 @@ input {
 }
 
 .guide-item {
-  height: 200px;
+  height: 25%;
   transition: transform 0.6s ease; /* Smooth transition for scaling */
   padding: 15px 10px;
   width: 100%;
@@ -178,7 +184,7 @@ input {
 }
 
 .current-guide {
-  transform: scale(1.047);  /*Enlarges the current guide */
+  transform: scale(1.038);  /*Enlarges the current guide */
   font-weight: bold; /* Makes the text of the current guide bolder */
   background-color: #e0e0e0; /* Slightly different background for emphasis */
   font-size: 12px;
@@ -307,58 +313,4 @@ input {
   100% { transform: rotate(360deg); }
 }
 
-
-
-/* Small Laptops */
-
-@media only screen and (max-width: 1024px) {
-  .btn-wrapper {
-    top: 703px;
-  }
-  .GuideList {
-    height: 703px;
-}
-.wrapper {
-  width: 69%;
-}
-
-}
-
-/* Medium Laptops */
-@media only screen and (min-width: 1025px) and (max-width: 1365px) {
-  .btn-wrapper {
-    top: 735px;
-  }
-  .GuideList {
-    height: 735px;
-}
-}
-
-/* Large Laptops */
-@media only screen and (min-width: 1366px) and (max-width: 1919px) {
-  .btn-wrapper {
-    top: 703px;
-  }
-  .GuideList {
-    height: 703px;
-
-  }
-  .guide-item {
-    height: 250px;
-}
-
-}
-
-/* Extra Large Laptops */
-@media only screen and (min-width: 1920px) {
-  .btn-wrapper {
-    top: 1015px;
-  }
-  .GuideList {
-    height: 1015px;
-
-  }
-  .guide-item {
-    height: 250px;
-}}
 
