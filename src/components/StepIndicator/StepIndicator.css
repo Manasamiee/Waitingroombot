@@ -1,8 +1,8 @@
 /* src/components/StepIndicator.css */
 
 .step-indicator-container {
-    height: 100%;
-    width: 20%; /* Keeps your width preference */
+    display: flex;
+    flex-direction: column;
     justify-content: space-between; /* Keeps your original spacing */
     padding: 14px;
     background-color: #f0f2f5; /* A light, neutral background color */
@@ -18,7 +18,7 @@
     background-color: #d9d9d9; /* A neutral, uncompleted step color */
     color: #333; /* Darker text for better readability */
     text-align: center;
-    margin-top: 100px; /* Keeps your original top margin */
+    margin-top: 50px; /* Keeps your original top margin */
     transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover and active states */
 }
 
@@ -45,41 +45,5 @@
     to { opacity: 0; }
 }
 
-
-
-/* Small Laptops */
-@media only screen and (max-width: 1024px) {
- 
-  .step{
-    margin-top: 115px;
-  }
-  }
-  
-/* Medium Laptops */
-@media only screen and (min-width: 1025px) and (max-width: 1366px) {
-    .step{
-        margin-top: 110px;
-      }
-  }
-  
-  /* Large Laptops */
-  @media only screen and (min-width: 1367px) and (max-width: 1920px) {
-    .step{
-        margin-top: 170px;
-      }
-      .step-indicator-container {
-       padding: 34px;
-    }
-  }
-  
-  /* Extra Large Laptops */
-  @media only screen and (min-width: 1921px) {
-    .step{
-        margin-top: 170px;
-      }
-    .step-indicator-container {
-        padding: 34px;
-     }
-}
   
   
