@@ -319,6 +319,9 @@ function App() {
 
           {showSummary && <SummaryModal />}
           {showThankYouModal && <ThankYouModal />}
+         
+         
+          <div className="GGuideList">
 
           <div className="GuideList">
             <StepIndicator currentStep={guideIndex} totalSteps={guides.length} />
@@ -332,9 +335,10 @@ function App() {
                   {index === guideIndex ? <div className="guide-description">{guide.description}</div> : null}
                 </div>
               ))}
-            </div>
-
-            <div className="btn-wrapper">
+            </div> 
+           
+          </div>
+          <div className="btn-wrapper">
               {guideIndex < 3 ? (
                 // Show 'Next' button for the first three guides
                 <NextButton action={nextGuide} />
@@ -344,7 +348,6 @@ function App() {
               )}
             </div>
           </div>
-
           <div className="wrapper">
             <div className="message-list">
               <InitialMessage />
