@@ -1,6 +1,7 @@
 /* src/components/StepIndicator.css */
 
 .step-indicator-container {
+   /* width: 10%;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Keeps your original spacing */
