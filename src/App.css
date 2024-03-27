@@ -45,7 +45,9 @@
 
 .input-wrapper {
   width: 95%;
-  background-color: #C6E3FA;
+  height: 82%;
+  margin-top: 5px;
+  background-color: #b9e6e7;
   /*border: red 1px solid;*/
   border-radius:.7em;
 }
@@ -318,11 +320,6 @@ input {
 @media only screen and (min-width: 1921px) {
  .all-guides{
   width: 90%;
-}
-.step-indicator-container {
-  width: 10%;
-  align-items: center;
-
 }
 .guide-title{
   font-size: 25px;
