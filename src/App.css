@@ -151,9 +151,10 @@ input {
   height: 100vh;
   right: 0px;
   width: 30%;
-  background-color: #F9F7C9;
+  /* background-color: #F9F7C9; */
   border-radius: 25px;  
 }
+
 .GuideList{
   
   display: flex;
@@ -315,6 +316,9 @@ input {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+
+
 
 
 @media only screen and (min-width: 1921px) {
