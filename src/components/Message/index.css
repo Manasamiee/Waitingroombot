@@ -27,9 +27,20 @@
 .Intro{
   padding: 5px;
 }
-@media only screen and (min-width: 1921px) {
 
- .message{
-   font-size: 20px;
+
+
+/* Large Laptops */
+@media only screen and (min-width: 1366px) and (max-width: 1920px) {
+
+  .message {
+     font-size: 20px;
+    
  }
  }
+ @media only screen and (min-width: 1921px) {
+
+  .message{
+    font-size: 22px;
+  }
+  }
