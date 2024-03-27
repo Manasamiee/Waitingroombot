@@ -171,7 +171,7 @@ input {
   background-color: #F9F7C9; /* Light background to make it stand out */
   /*border-radius: 8px;  Soft rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  /*width: 90%; /* Take full width of the container */
+  width: 100%; /* Take full width of the container */
   height: 100%;
 }
 
