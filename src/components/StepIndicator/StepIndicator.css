@@ -4,7 +4,6 @@
    /* width: 10%;*/
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Keeps your original spacing */
     padding: 14px;
     background-color: #f0f2f5; /* A light, neutral background color */
    /*border-radius: 5px;  Adds rounded corners for a modern look */
@@ -12,6 +11,13 @@
 }
 
 .step {
+  display: flex;
+  /* flex: 1; Distributes height evenly among steps */
+  justify-content: center; /* Center the step-content horizontally */
+  /* align-items: center; */
+  height: 25%; /* Ensure each step takes 25% of the height */
+}
+.step-content {
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -19,16 +25,15 @@
     background-color: #d9d9d9; /* A neutral, uncompleted step color */
     color: #333; /* Darker text for better readability */
     text-align: center;
-    margin-top: 50px; /* Keeps your original top margin */
+    margin-top: 10px; 
     transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover and active states */
 }
-
-.step.completed {
+.step-content.completed {
     background-color: #4CAF50; /* A professional, muted green for completed steps */
     color: white; /* White text for contrast */
 }
 
-.step.current {
+.step-content.current {
     background-color: #007bff; /* A professional, muted blue for the current step */
     color: white; /* White text for contrast */
     transform: scale(1.5); /* Slightly enlarges the current step */
@@ -46,5 +51,3 @@
     to { opacity: 0; }
 }
 
-  
-  
