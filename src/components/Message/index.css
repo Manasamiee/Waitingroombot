@@ -27,3 +27,9 @@
 .Intro{
   padding: 5px;
 }
+@media only screen and (min-width: 1921px) {
+
+ .message{
+   font-size: 20px;
+ }
+ }
