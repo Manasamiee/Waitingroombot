@@ -61,7 +61,6 @@ input {
   outline: none;
   padding: 5px 10px;
   font-size: 16px;
-  
 }
 .submit-wrapper {
   width: 5%;
@@ -319,7 +318,13 @@ input {
 
 
 
+/* Large Laptops */
+@media only screen and (min-width: 1366px) and (max-width: 1920px) {
 
+  .input-wrapper input{
+     font-size: 18px;
+ }
+ }
 
 @media only screen and (min-width: 1921px) {
  .all-guides{
@@ -330,5 +335,8 @@ input {
 }
 .guide-description{
   font-size: 20px;
+}
+.input-wrapper input{
+  font-size: 23px;
 }
 }
